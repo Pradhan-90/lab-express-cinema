@@ -1,11 +1,13 @@
-const express = require("express");
-const async = require("hbs/lib/async");
-const router = express.Router();
+// router.get("/", (req, res, next) => {
+//   res.render("index", { layout: false });
+// });
 
-/* GET home page */
-router.get("/", async (req, res, next) => {
-  const movies = await Movie.find;
-  res.render("movies", { movies });
-});
-
-module.exports = router;
+// router.get("/movies", (req, res, next) => {
+//   Movie.find()
+//     .then((movies) => {
+//       res.render("movies", { movies });
+//     })
+//     .catch((error) => {
+//       next(error);
+//     });
+// });

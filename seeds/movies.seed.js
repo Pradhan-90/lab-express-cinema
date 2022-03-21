@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const Movie = require("../models/Movie");
+const Movie = require("../models/Movie.model");
 
 const MONGO_URI =
   process.env.MONGODB_URI || "mongodb://localhost/ironlaunched-example";
