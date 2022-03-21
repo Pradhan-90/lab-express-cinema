@@ -1,13 +1,7 @@
-// router.get("/", (req, res, next) => {
-//   res.render("index", { layout: false });
-// });
+const express = require("express");
+const router = express.Router();
 
-// router.get("/movies", (req, res, next) => {
-//   Movie.find()
-//     .then((movies) => {
-//       res.render("movies", { movies });
-//     })
-//     .catch((error) => {
-//       next(error);
-//     });
-// });
+/* GET home page */
+router.get("/", (req, res, next) => res.render("index"));
+
+module.exports = router;
